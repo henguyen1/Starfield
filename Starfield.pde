@@ -10,6 +10,7 @@ void setup()
 		bob[i] = new NormalParticle();
 	}
 	bob[0] = new OddballParticle();
+	bob[1] = new JumboParticle();
 
 }
 	
@@ -81,7 +82,7 @@ class JumboParticle extends NormalParticle
 	void show()
 	{
 		fill(myColor);
-		ellipse(myX,myY,20,20);
+		ellipse((float)myX,(float)myY,100,100);
 	}
 }
 
