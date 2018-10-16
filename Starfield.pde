@@ -10,7 +10,7 @@ void setup()
 		bob[i] = new NormalParticle();
 	}
 	bob[0] = new OddballParticle();
-	bob[1] = new JumboParticle();
+	bob[999] = new JumboParticle();
 
 }
 	
@@ -79,7 +79,7 @@ class OddballParticle implements Particle
 }
 class JumboParticle extends NormalParticle
 {
-	void show()
+	public void show()
 	{
 		fill(myColor);
 		ellipse((float)myX,(float)myY,100,100);
